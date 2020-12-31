@@ -3,10 +3,10 @@ head
   meta(charset='utf-8')
   title WalkingSimulator - 步行模拟器
   base(href='/')
-  meta(name='viewport' content='width=device-width, initial-scale=1')
+  meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no')
   link(rel='icon' type='image/x-icon' href='favicon.ico')
 body
   app-root
 script
   | window.geojsonFile = "!{geojsonFile}"
-script(type='text/javascript' src='//webapi.amap.com/maps?v=1.4.15&key=810315a372fe08048e7103d9e266b4c4')
+script(src='//webapi.amap.com/loader.js')
