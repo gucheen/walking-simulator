@@ -54,9 +54,9 @@ const main = () => {
 
         const hash = crypto.createHash('md5').update(jsonStr).digest('hex').substr(0, 8);
 
-        const filename = `${hash}.geojson`;
+        const filename = `${hash}.json`;
 
-        fs.writeFile(path.resolve(__dirname, filename), jsonStr, (err) => {
+        fs.writeFile(path.resolve(__dirname, `geojson/${filename}`), jsonStr, (err) => {
           if (err) {
             console.err(err);
           }
